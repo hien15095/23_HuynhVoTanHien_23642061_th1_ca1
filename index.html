@@ -1,312 +1,35 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio Data Science</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>Trang cá nhân sinh viên</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- # header -->
-  <header class="site-header">
-    <div class="container header-top">
-      <div class="brand">
-        <span class="brand-mark">DS</span>
-        <div>
-          <p class="brand-eyebrow">Data Science Portfolio</p>
-          <h1 class="brand-title">Huỳnh Võ Tấn Hiên</h1>
-          <p class="brand-subtitle">Sinh viên Khoa học dữ liệu · Đại học Công Nghiệp TP. HCM</p>
+    <div class="profile-card">
+        <div id="avatar">
+            <img src="images/avatar.jpg" alt="Ảnh đại diện">
         </div>
-      </div>
+        <div id="full-name">Huỳnh Võ Tấn Hiên</div>
+        <div id="student-id" style="display:none;">23642061</div>
+            <a>MSSV</a>
+        
+        <div id="email">huynhvotanhien150933@gmail.com</div>
 
-      <!-- # liên kết mạng xã hội -->
-      <div class="social-inline">
-        <a class="icon-btn" href="mailto:huynhvotanhien150933@gmail.com" aria-label="Email">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2 8 5 8-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
-        <a class="icon-btn" href="https://github.com/hien15095" target="_blank" rel="noopener" aria-label="GitHub">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 2c-5.5 0-10 4.6-10 10.3 0 4.5 2.9 8.3 6.8 9.7.5.1.7-.2.7-.5v-2c-2.8.6-3.4-1.4-3.4-1.4-.5-1.2-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1 1.5-.8 1.7-1.1.1-.8.5-1.2.9-1.5-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2.1 1-2.8-.1-.3-.4-1.3.1-2.7 0 0 .9-.3 2.9 1a9.7 9.7 0 0 1 5.3 0c2-1.3 2.9-1 2.9-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.7 1 2.8 0 3.9-2.4 4.7-4.7 5 .4.3.8 1 .8 2v3c0 .3.2.6.7.5A10.2 10.2 0 0 0 22 12.3C22 6.6 17.5 2 12 2z" fill="currentColor"/>
-          </svg>
-        </a>
-        <a class="icon-btn" href="https://www.linkedin.com/in/hu%E1%BB%B3nh-v%C3%B5-t%E1%BA%A5n-hi%E1%BB%81n-undefined-844b1a399" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M4 9h4v11H4zM6 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm6 5h4v2c.6-1 1.7-2.2 3.8-2.2 2.8 0 4.2 1.8 4.2 4.8V20h-4v-6.1c0-1.6-.6-2.7-2.1-2.7-1.1 0-1.8.8-2.1 1.5-.1.3-.1.7-.1 1.1V20h-4V9z" fill="currentColor"/>
-          </svg>
-        </a>
-      </div>
+        <div id="github-link">
+            <a href="https://github.com/hien15095" target="_blank">GitHub</a>
+        </div>
+        <div id="linkedin-link">
+            <a href="https://www.linkedin.com/in/hu%E1%BB%B3nh-v%C3%B5-t%E1%BA%A5n-hi%E1%BB%81n-undefined-844b1a399" target="_blank">LinkedIn</a>
+        </div>
+        <div id="hobbies">
+            <ul>
+                <li>Đọc sách chuyên ngành</li>
+                <li>Chạy bộ và rèn luyện sức khỏe</li>
+                <li>Khám phá công nghệ mới</li>
+                <li>Nghe podcast về dữ liệu</li>
+            </ul>
+        </div>
     </div>
-
-    <!-- # navigation -->
-    <nav class="nav nav-sticky">
-      <div class="container nav-inner">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#stack">Tech Stack</a>
-        <a href="#goals">Goals</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
-
-    <!-- # hero -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <p class="hero-kicker">Phân tích dữ liệu · Trực quan hóa · Mô hình hóa</p>
-          <h2 class="hero-title">Portfolio Data Scientist với định hướng sản phẩm.</h2>
-          <p class="hero-desc">
-            Tôi tập trung vào khai phá dữ liệu, xây dựng dashboard và mô hình dự đoán để
-            tạo ra insight có thể hành động. Mục tiêu là hỗ trợ quyết định chiến lược
-            bằng dữ liệu rõ ràng và chính xác.
-          </p>
-          <div class="hero-actions">
-            <a class="btn-primary" href="#projects">Xem dự án</a>
-            <a class="btn-secondary" href="#contact">Liên hệ</a>
-          </div>
-          <div class="hero-badges">
-            <span>Open to Internship</span>
-            <span>Data Science</span>
-            <span>Analytics</span>
-          </div>
-        </div>
-        <!-- # ảnh đại diện -->
-        <div class="hero-card">
-          <div class="avatar-wrap">
-            <img src="images/avatar.jpg" alt="Ảnh đại diện sinh viên" class="avatar" />
-          </div>
-          <!-- # thông tin sinh viên -->
-          <div class="hero-meta">
-            <p><strong>MSSV:</strong> 23642061</p>
-            <p><strong>Lớp:</strong> ĐHKHDL19A</p>
-            <p><strong>Nơi ở:</strong> TP. Hồ Chí Minh</p>
-          </div>
-          <div class="hero-stats">
-            <div>
-              <span class="stat-value">3</span>
-              <span class="stat-label">Dự án</span>
-            </div>
-            <div>
-              <span class="stat-value">5+</span>
-              <span class="stat-label">Kỹ năng</span>
-            </div>
-            <div>
-              <span class="stat-value">2026</span>
-              <span class="stat-label">Mục tiêu</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </header>
-
-  <main class="container layout">
-    <!-- # phần giới thiệu -->
-    <section class="card" id="about">
-      <h3 class="section-title">Giới thiệu</h3>
-      <p>
-        Tôi là sinh viên năm 3 ngành Khoa học dữ liệu. Tôi tập trung vào phân tích dữ liệu,
-        trực quan hóa và áp dụng thống kê để tạo ra insight hữu ích. Tôi mong muốn tham gia
-        các dự án thực tế và phát triển năng lực mô hình hóa dữ liệu.
-      </p>
-    </section>
-
-    <!-- # dự án -->
-    <section class="card" id="projects">
-      <div class="section-head">
-        <h3 class="section-title">Dự án tiêu biểu</h3>
-        <p class="section-note">Trình bày theo format portfolio: Vấn đề · Giải pháp · Kết quả.</p>
-      </div>
-      <div class="project-grid">
-        <article class="project-card">
-          <div class="project-head">
-            <h4>Phân tích hành vi khách hàng thương mại điện tử</h4>
-            <span class="badge">Python · Pandas</span>
-          </div>
-          <p>
-            Làm sạch dữ liệu giao dịch, chuẩn hóa thông tin khách hàng và xây dựng mô hình RFM để
-            phân nhóm theo giá trị trọn đời. Trực quan hóa kết quả, đề xuất chiến lược giữ chân
-            và ưu tiên tệp khách hàng có khả năng quay lại cao.
-          </p>
-          <ul class="project-list">
-            <li>Xử lý 120K bản ghi, giảm lỗi thiếu dữ liệu xuống 3%.</li>
-            <li>Phân nhóm 4 phân khúc khách hàng trọng điểm.</li>
-            <li>Đề xuất kế hoạch retention cho nhóm có giá trị cao.</li>
-          </ul>
-          <div class="project-metrics">
-            <span>RFM</span>
-            <span>Segmentation</span>
-            <span>Retention</span>
-          </div>
-        </article>
-        <article class="project-card">
-          <div class="project-head">
-            <h4>Dashboard theo dõi KPI bán hàng</h4>
-            <span class="badge">Power BI · SQL</span>
-          </div>
-          <p>
-            Thiết kế mô hình dữ liệu, tối ưu truy vấn SQL và xây dựng dashboard tương tác theo
-            kênh bán hàng, khu vực và thời gian. Đặt ngưỡng cảnh báo KPI giúp phát hiện sớm
-            điểm rơi doanh thu.
-          </p>
-          <ul class="project-list">
-            <li>Chuẩn hóa dữ liệu từ 3 nguồn và đồng bộ theo thời gian.</li>
-            <li>Giảm thời gian tải báo cáo xuống còn 6 giây.</li>
-            <li>Thiết kế bộ lọc động và cảnh báo KPI theo ngưỡng.</li>
-          </ul>
-          <div class="project-metrics">
-            <span>KPI</span>
-            <span>Dashboard</span>
-            <span>Visualization</span>
-          </div>
-        </article>
-        <article class="project-card">
-          <div class="project-head">
-            <h4>Dự báo nhu cầu sản phẩm</h4>
-            <span class="badge">Time Series · ML</span>
-          </div>
-          <p>
-            Thử nghiệm ARIMA/Prophet để dự báo theo tuần, đánh giá sai số bằng MAE/RMSE
-            và so sánh nhiều mô hình. Kết quả hỗ trợ kế hoạch tồn kho và tối ưu ngân sách nhập hàng.
-          </p>
-          <ul class="project-list">
-            <li>So sánh 3 mô hình dự báo và chọn mô hình tốt nhất.</li>
-            <li>Giảm RMSE ~12% so với baseline.</li>
-            <li>Đưa ra khuyến nghị nhập hàng theo mùa vụ.</li>
-          </ul>
-          <div class="project-metrics">
-            <span>Forecast</span>
-            <span>MAE/RMSE</span>
-            <span>Planning</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- # kỹ năng -->
-    <section class="card" id="skills">
-      <h3 class="section-title">Kỹ năng</h3>
-      <div class="skill-grid">
-        <div class="skill-card">
-          <h4>Ngôn ngữ</h4>
-          <p>Python, SQL</p>
-        </div>
-        <div class="skill-card">
-          <h4>Phân tích</h4>
-          <p>Pandas, NumPy, Thống kê ứng dụng</p>
-        </div>
-        <div class="skill-card">
-          <h4>Trực quan hóa</h4>
-          <p>Power BI, Matplotlib, Seaborn</p>
-        </div>
-        <div class="skill-card">
-          <h4>Kỹ năng mềm</h4>
-          <p>Thuyết trình, làm việc nhóm</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- # tech stack -->
-    <section class="card" id="stack">
-      <h3 class="section-title">Tech Stack</h3>
-      <div class="tag-list">
-        <span>Python</span>
-        <span>Pandas</span>
-        <span>NumPy</span>
-        <span>SQL</span>
-        <span>Power BI</span>
-        <span>Matplotlib</span>
-        <span>Seaborn</span>
-        <span>Git</span>
-      </div>
-    </section>
-
-    <!-- # sở thích -->
-    <section class="card" id="hobbies">
-      <h3 class="section-title">Sở thích</h3>
-      <ul class="list-clean">
-        <li>Đọc sách chuyên ngành</li>
-        <li>Chạy bộ và rèn luyện sức khỏe</li>
-        <li>Khám phá công nghệ mới</li>
-        <li>Nghe podcast về dữ liệu</li>
-      </ul>
-    </section>
-
-    <!-- # mục tiêu -->
-    <section class="card highlight" id="goals">
-    <h3 class="section-title">Mục tiêu nghề nghiệp</h3>
-    <p>
-    Mục tiêu của tôi là trở thành Data Scientist có khả năng phân tích dữ liệu,
-    xây dựng mô hình dự đoán và chuyển đổi dữ liệu thành những insight có giá trị.
-    Tôi mong muốn tham gia các dự án dữ liệu thực tế để phát triển kỹ năng phân tích,
-    trực quan hóa và mô hình hóa dữ liệu, đồng thời đóng góp vào các dự án dữ liệu
-    quy mô doanh nghiệp trong tương lai.
-    </p>
-    </section>
-
-    <!-- # liên hệ -->
-    <section class="card" id="contact">
-      <h3 class="section-title">Liên hệ</h3>
-      <div class="contact-grid">
-        <a class="contact-card" href="mailto:huynhvotanhien150933@gmail.com">
-          <span class="contact-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24">
-              <path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2 8 5 8-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-          <div>
-            <span class="contact-title">Email</span>
-            <span class="contact-value">huynhvotanhien150933@gmail.com</span>
-            <span class="contact-hint">Phản hồi trong 24h</span>
-          </div>
-        </a>
-        <a class="contact-card" href="tel:+84964803549">
-          <span class="contact-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24">
-              <path d="M5 4h4l2 5-3 2a12 12 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2 16 16 0 0 1-14-14 2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-          <div>
-            <span class="contact-title">Số điện thoại</span>
-            <span class="contact-value">0964 803 549</span>
-            <span class="contact-hint">Gọi trong giờ hành chính</span>
-          </div>
-        </a>
-        <a class="contact-card" href="https://github.com/hien15095" target="_blank" rel="noopener">
-          <span class="contact-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24">
-              <path d="M12 2c-5.5 0-10 4.6-10 10.3 0 4.5 2.9 8.3 6.8 9.7.5.1.7-.2.7-.5v-2c-2.8.6-3.4-1.4-3.4-1.4-.5-1.2-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1 1.5-.8 1.7-1.1.1-.8.5-1.2.9-1.5-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2.1 1-2.8-.1-.3-.4-1.3.1-2.7 0 0 .9-.3 2.9 1a9.7 9.7 0 0 1 5.3 0c2-1.3 2.9-1 2.9-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.7 1 2.8 0 3.9-2.4 4.7-4.7 5 .4.3.8 1 .8 2v3c0 .3.2.6.7.5A10.2 10.2 0 0 0 22 12.3C22 6.6 17.5 2 12 2z" fill="currentColor"/>
-            </svg>
-          </span>
-          <div>
-            <span class="contact-title">GitHub</span>
-            <span class="contact-value">github.com/hien15095</span>
-            <span class="contact-hint">Xem repo & notebook</span>
-          </div>
-        </a>
-        <a class="contact-card" href="https://www.linkedin.com/in/hu%E1%BB%B3nh-v%C3%B5-t%E1%BA%A5n-hi%E1%BB%81n-undefined-844b1a399" target="_blank" rel="noopener">
-          <span class="contact-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24">
-              <path d="M4 9h4v11H4zM6 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm6 5h4v2c.6-1 1.7-2.2 3.8-2.2 2.8 0 4.2 1.8 4.2 4.8V20h-4v-6.1c0-1.6-.6-2.7-2.1-2.7-1.1 0-1.8.8-2.1 1.5-.1.3-.1.7-.1 1.1V20h-4V9z" fill="currentColor"/>
-            </svg>
-          </span>
-          <div>
-            <span class="contact-title">LinkedIn</span>
-            <span class="contact-value">linkedin.com/in/huynhvotanhien</span>
-            <span class="contact-hint">Kết nối chuyên nghiệp</span>
-          </div>
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <!-- # footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2026 Huỳnh Võ Tấn Hiên. Portfolio sinh viên Khoa học dữ liệu.</p>
-    </div>
-  </footer>
 </body>
 </html>
